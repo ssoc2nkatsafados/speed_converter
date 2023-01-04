@@ -1,0 +1,47 @@
+/* Author: Katsafados Nikolaos
+
+Περιγραφή 
+
+Αρχείο μορφοποίησης css για τη σελίδα, που θα φιλοξενήσει τον υπολογιστή μετατροπής μονάδων μέτρησης ταχύτητας 
+
+*/
+
+*{
+    background-color:lightgray;
+}
+.box{
+    text-align: center;
+}
+.converter-container{
+    text-align: center;
+    border: 2px solid black;
+    width: 600px;
+    height: 100px;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+.column{
+    float: left;
+    width: 33.3%;
+    padding-top: 10px;
+    
+}
+ .values{
+    float: left;
+    margin-left: 15px;
+    padding: 1px 40px 1px 40px;
+    margin-top: 10px;
+    background-color: lightcoral
+}
+.input{
+    border: 2px solid black;
+    
+
+}
+.result{
+    float: right;
+    margin-right: 15px;
+    padding: 1px 40px 1px 40px;
+    margin-top: 10px;
+    background-color: lightcoral
+}

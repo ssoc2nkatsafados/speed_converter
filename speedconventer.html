@@ -1,0 +1,73 @@
+<!--
+    Author: Katsafados Nikolaos
+
+    Περιγραφή: 
+
+    Σελίδα που φιλοξενεί έναν υπολογιστή μετατροπής ταχύτητας 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Converter</title>
+	<script src="speedconverter.js"></script>
+	<link rel="stylesheet" href="speedconverter.css">
+</head>
+<body>
+	<div class="box">
+		<h1>Speed Converter</h1>
+			
+		<p>Τα μίλια ανα ώρα, όπως και οι κόμβοι, είναι μονάδες μέτρησης ταχύτητας. 
+		   Τα μίλια χρησιμοποιούνται συνήθως σε χώρες εκτός του μετρικού συστήματος για τις μεταφορές/συγκοινωνίες, όπως οι ΗΠΑ.<br>
+	       Οι κόμβοι, συνήθως, συναντώνται στον τομέα των θαλάσσιων και αεροπορικών μεταφορών.
+		 </p>
+		 
+		 <img src="speedphoto.jpg"  style="width: 40%;">;
+
+	</div>
+    
+	<div class="converter-container">
+        <div class="column"><input class="input" type="text" placeholder="Input" id="input"></div>
+		<div class="column"><span>=</span></div>
+		<div class="column"><input class="input" type="text" placeholder="Result" id="result"></div>
+        
+
+        
+		<select class="values"  id="inputType">
+			<option value="miles">Miles/h</option>
+			<option value="kilometers">Kilometers/h</option>
+			<option value="knots">Knots</option>
+		</select>
+
+		<select class="result"  id="resultType">
+			<option value="miles">Miles/h</option>
+			<option value="kilometers">Kilometers/h</option>
+			<option value="knots">Knots</option>
+		</select>
+	   
+    </div>
+</body>
+
+<Script>
+//Μεταβλητές 
+let input = document.getElementById('input');
+let result = document.getElementById('result');
+let inputType = document.getElementById('inputType');
+let resultType = document.getElementById('resultType');
+let option_from,option_to;
+
+// Event Listener
+input.addEventListener("keyup",myResult);
+inputType.addEventListener("change",myResult);
+resultType.addEventListener("change",myResult);
+
+// Αρχικές τιμές
+option_from = inputType.value;
+option_to   = resultType.value;
+
+
+</Script>
+</html>
